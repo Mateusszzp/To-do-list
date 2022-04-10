@@ -1,4 +1,5 @@
 {
+
     const tasks = [
         {
             content: "nagrać lekcje",
@@ -9,6 +10,12 @@
             done: true,
         },
     ];
+    const addAutoFocus = (addFocus) => {
+        addFocus.innerHtml(autofocus)
+        render();
+
+    }
+
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -20,7 +27,6 @@
         tasks.splice(taskIndex, 1);
         render();
     }
-
     const toggleTaskDone = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render()
@@ -33,6 +39,7 @@
                 removeTask(index);
             });
         });
+        const addFocus = document.querySelector(".js-newTask");
 
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
@@ -63,20 +70,22 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
-        console.log(newTaskContent)
+        console.log(newTaskContent);
 
         if (newTaskContent === "") {
             return;
         }
         addNewTask(newTaskContent);
+
     };
     const init = () => {
         render();
+
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
+
     };
     init()
 }

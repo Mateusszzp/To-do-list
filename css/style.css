@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.form {
+    text-align: center;
+}
