@@ -71,6 +71,9 @@
         const newTaskInput = document.querySelector(".js-newTask");
         newTaskInput.focus();
 
+        const cleanTaskInput = document.querySelector(".js-newTask")
+        cleanTaskInput.value = null;
+
         if (newTaskContent === "") {
             return;
         }
