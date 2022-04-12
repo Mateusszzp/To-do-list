@@ -10,12 +10,7 @@
             done: true,
         },
     ];
-    const addAutoFocus = (addFocus) => {
-        addFocus.innerHtml(autofocus)
-        render();
-
-    }
-
+    
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -39,7 +34,7 @@
                 removeTask(index);
             });
         });
-        const addFocus = document.querySelector(".js-newTask");
+        
 
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
@@ -72,11 +67,15 @@
 
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
         console.log(newTaskContent);
+        
+        const newTaskInput = document.querySelector(".js-newTask");
+        newTaskInput.focus();
 
         if (newTaskContent === "") {
             return;
         }
         addNewTask(newTaskContent);
+        
 
     };
     const init = () => {
@@ -85,7 +84,8 @@
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
-
+        
     };
     init()
+    
 }
