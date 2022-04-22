@@ -6,25 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="js/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel=" stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <title>Lista zadań</title>
 </head>
 
 <body>
-    <div class="form">
-    <Form class="js-form form__elements" >
-        <legend>Lista zadań</legend>
-        
+
+    <Form class="js-form">
+        <div class="task__conteiner">
+            <legend class="form__taskList">Lista zadań</legend>
+
             <p>
-                Dodaj nowe zadanie
+                <span class="form_addTask"> Dodaj nowe zadanie</span>
             </p>
-            <input class="js-newTask" placeholder="Dodaj nowe zadanie">
-            <button>Dodaj zadanie</button>
-            <ul class="js-tasks"></ul>
-        </Form>
-    </div>
+            <div class="form__inputButton">
+                <input class="js-newTask form__input" placeholder="Dodaj nowe zadanie">
+                <button class="form__button">Dodaj zadanie</button>
+            </div>
+            <p>
+                <span class="form__list">Lista zadań</span>
+            </p>
+            <ul class="js-tasks form__task"></ul>
+        </div>
+    </Form>
+
 </body>
 
 </html>

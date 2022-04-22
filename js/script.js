@@ -10,7 +10,7 @@
             done: true,
         },
     ];
-    
+
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -34,7 +34,7 @@
                 removeTask(index);
             });
         });
-        
+
 
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
@@ -51,11 +51,11 @@
             htmlString += `
             <li
             ${task.done ? " style=\"text-decoration: line-through\"" : ""}>
-            <button class="js-done">zrobione?</button>
-            <button class="js-remove">usuń</button>
-
-            ${task.content}
-            </li>
+            <div class="taskWall">
+            <button class="js-done taskDone"></button>
+            <span class="text">${task.content}</span>
+            <button class="js-remove taskRemove"></button>
+            </li></div>
             `;
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
@@ -67,7 +67,7 @@
 
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
         console.log(newTaskContent);
-        
+
         const newTaskInput = document.querySelector(".js-newTask");
         newTaskInput.focus();
 
@@ -78,7 +78,7 @@
             return;
         }
         addNewTask(newTaskContent);
-        
+
 
     };
     const init = () => {
@@ -87,8 +87,8 @@
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
-        
+
     };
     init()
-    
+
 }

@@ -8,10 +8,127 @@ html {
 
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato', sans-serif;
+    background-color: #e7e5e5;
+    font-weight: bold;
+
+}
+
+.task__conteiner {
+    margin: 0px auto;
+    max-width: 700px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
-.form {
-    text-align: center;
+
+.form__taskList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 30px;
+}
+
+.form_addTask {
+    display: flex;
+    background-color: white;
+    padding: 17px;
+    border-bottom: 2px solid #e7e5e5;
+
+
+}
+
+.form__inputButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    background: white;
+    margin: -16px 0 0;
+
+
+}
+
+.form__input {
+    flex-basis: 100%;
+    padding: 8px;
+    border: 1px solid #e7e5e5;
+    margin: 5px 0;
+
+}
+
+.form__button {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin: 5px 0;
+
+}
+
+@media (min-width:768px) {
+    .form__input {
+        flex-basis: 78%;
+    }
+
+    .form__button {
+        flex-basis: 20%;
+        flex-wrap: unset;
+
+
+    }
+}
+
+.form__list {
+    display: flex;
+    background: white;
+    padding: 14px;
+    margin-top: -10px;
+    padding: 17px;
+
+}
+
+.form__task {
+    background: white;
+    padding: 30px;
+    margin-top: -14px;
+}
+
+
+.taskDone {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    justify-self: start;
+    align-self: center;
+
+}
+
+.taskWall {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    align-content: space-between;
+    justify-content: space-around;
+
+}
+
+.taskRemove {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    grid-column: 3;
+    justify-self: end;
+    align-self: center;
+}
+
+.text {
+    justify-self: center;
+    align-self: center;
 }
