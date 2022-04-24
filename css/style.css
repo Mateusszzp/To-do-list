@@ -15,7 +15,7 @@ body {
 }
 
 .task__conteiner {
-    margin: 0px auto;
+    margin: 50px auto;
     max-width: 700px;
     padding: 0 20px;
     display: flex;
@@ -97,38 +97,54 @@ body {
     background: white;
     padding: 30px;
     margin-top: -14px;
+    padding: 0 30px 0;
 }
 
 
-.taskDone {
-    width: 30px;
-    height: 30px;
-    text-decoration: none;
-    justify-self: start;
-    align-self: center;
 
-}
 
 .taskWall {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 30px auto 30px;
+    grid-auto-rows: 100px;
     grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    align-content: space-between;
-    justify-content: space-around;
-
+    word-break: break-word;
+    
 }
 
-.taskRemove {
+.taskRemove--button {
     width: 20px;
     height: 20px;
-    background-color: aqua;
+    background-color:  #f02b2b;
     grid-column: 3;
     justify-self: end;
     align-self: center;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/59/59600.png");
+    background-size: 15px;
+    
+}
+
+.taskDone--button{
+    
+    background-image:śmieci;
+
+    width: 20px;
+    height: 20px;
+    justify-self: start;
+    align-self: center;
+}
+
+
+
+.list__item {
+    
+    border-bottom: 1px solid #e7e5e5;
 }
 
 .text {
-    justify-self: center;
+    justify-self: start;
     align-self: center;
+}
+.list__item--done {
+    text-decoration: line-through;
 }
