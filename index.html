@@ -9,33 +9,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/style.css" rel=" stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="css/tasks.css" rel=" stylesheet">
+    <link href="css/conteiner.css" rel=" stylesheet">
+    <link href="css/buttons.css" rel=" stylesheet">
+    <link href="css/header.css" rel=" stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Lista zadań</title>
-   
+
 </head>
 
-<body>
+<body class="conteiner">
+    <header>
+        <Form class="js-form">
 
-    <Form class="js-form">
-        <div class="task__conteiner">
-            <legend class="form__taskList">Lista zadań</legend>
-
+            <legend class="form__taskList">
+                Lista zadań
+            </legend>
             <p>
                 <span class="form_addTask"> Dodaj nowe zadanie</span>
             </p>
-            <div class="form__inputButton">
-                <input class="js-newTask form__input" placeholder="Co jest do zrobienia">
+            <section class="form__inputButton">
+                <input class="js-newTask form__input" placeholder="Co jest do zrobienia?">
                 <button class="form__button">Dodaj zadanie</button>
-            </div>
+            </section>
+
             <p>
                 <span class="form__list">Lista zadań</span>
             </p>
-            <ul class="js-tasks form__task"></ul>
-        
-        </div>
+    </header>
+    <ul class="js-tasks form__task"></ul>
     </Form>
-
 </body>
 
 </html>

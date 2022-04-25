@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.conteiner {
+    margin: 50px auto;
+    max-width: 700px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    background-color: #e7e5e5;
+    
+}
