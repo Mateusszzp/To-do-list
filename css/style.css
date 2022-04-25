@@ -90,14 +90,15 @@ body {
     padding: 14px;
     margin-top: -10px;
     padding: 17px;
+    
 
 }
 
 .form__task {
     background: white;
-    padding: 30px;
     margin-top: -14px;
     padding: 0 30px 0;
+   
 }
 
 
@@ -109,42 +110,48 @@ body {
     grid-auto-rows: 100px;
     grid-gap: 10px;
     word-break: break-word;
-    
+
 }
 
 .taskRemove--button {
-    width: 20px;
-    height: 20px;
-    background-color:  #f02b2b;
+    width: 30px;
+    height: 30px;
+    background-color: #f02b2b;
     grid-column: 3;
     justify-self: end;
     align-self: center;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/59/59600.png");
-    background-size: 15px;
+    color: white;
     
+
 }
 
-.taskDone--button{
-    
-    background-image:śmieci;
-
-    width: 20px;
-    height: 20px;
+.taskDone--button {
+    width: 30px;
+    height: 30px;
     justify-self: start;
     align-self: center;
+     background-color: green;
+     color:white;
+     border: none;
+     
 }
 
 
 
 .list__item {
-    
+
     border-bottom: 1px solid #e7e5e5;
+    text-decoration: none;
+    list-style: none;
 }
 
 .text {
     justify-self: start;
     align-self: center;
 }
+
 .list__item--done {
     text-decoration: line-through;
+    
 }
+
