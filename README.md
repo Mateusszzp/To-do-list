@@ -6,6 +6,7 @@
 - Grid
 - ES6+
 - Java Script function
+- Media query
 
 ### Description
 A simple application for listing tasks, marking their completion and modification.
