@@ -1,17 +1,19 @@
 .displayTask {
     display: grid;
     grid-template-columns: 30px auto 30px;
+    grid-template-rows: auto;
     grid-auto-rows: 60px;
     grid-gap: 10px;
     word-break: break-word;
     list-style: none;
     border-bottom: 1px solid #e7e5e5;
+    padding: 10px;
 }
 
 .form__task {
     background: white;
     margin-top: -14px;
-    padding: 0 30px 0;
+    padding: 0 10px 0;
 
 }
 
@@ -23,7 +25,7 @@
     justify-self: end;
     align-self: center;
     color: white;
-    border:none;
+    border: none;
 }
 
 .taskDone--button {
@@ -34,12 +36,11 @@
     background-color: hsl(120, 100%, 25%);
     color: white;
     border: none;
-    
+
 }
-.taskDone--button:hover{
-    background-color:  hsl(120, 100%, 40%);
-    
-    
+
+.taskDone--button:hover {
+    background-color: hsl(120, 100%, 30%);
 }
 
 .list__item {
@@ -47,9 +48,14 @@
     align-self: center;
     color: hsl(0, 1%, 42%);
     font-style: normal;
-    
 }
 
 .list__item--done {
     text-decoration: line-through;
+}
+
+.body__task {
+    padding: 20px;
+    background: white;
+    border-top: 1px solid #e7e5e5;
 }
