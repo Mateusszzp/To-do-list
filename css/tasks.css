@@ -27,6 +27,9 @@
     color: white;
     border: none;
 }
+.taskRemove--button:hover{
+    background-color: hsl(0, 87%, 65%);
+}
 
 .taskDone--button {
     width: 30px;
