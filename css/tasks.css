@@ -1,4 +1,4 @@
-.displayTask {
+.task__display {
     display: grid;
     grid-template-columns: 30px auto 30px;
     grid-template-rows: auto;
@@ -10,14 +10,14 @@
     padding: 10px;
 }
 
-.form__task {
+.task__list {
     background: white;
     margin-top: -14px;
     padding: 0 10px 0;
 
 }
 
-.taskRemove--button {
+.task__remove--button {
     width: 30px;
     height: 30px;
     background-color: hsl(0, 87%, 55%);
@@ -26,12 +26,13 @@
     align-self: center;
     color: white;
     border: none;
+    cursor: pointer;
 }
-.taskRemove--button:hover{
+.task__remove--button:hover{
     background-color: hsl(0, 87%, 65%);
 }
 
-.taskDone--button {
+.task__done--button {
     width: 30px;
     height: 30px;
     justify-self: start;
@@ -39,10 +40,11 @@
     background-color: hsl(120, 100%, 25%);
     color: white;
     border: none;
+    cursor:pointer;
 
 }
 
-.taskDone--button:hover {
+.task__done--button:hover {
     background-color: hsl(120, 100%, 30%);
 }
 
@@ -57,7 +59,7 @@
     text-decoration: line-through;
 }
 
-.body__task {
+.task {
     padding: 20px;
     background: white;
     border-top: 1px solid #e7e5e5;

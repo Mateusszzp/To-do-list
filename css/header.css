@@ -1,12 +1,12 @@
-.form__taskList {
+.header {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 900;
 }
 
-.form_addTask {
+.section_header {
     display: flex;
     background-color: white;
     padding: 17px;
@@ -14,7 +14,7 @@
     font-weight: 900;
 }
 
-.form__list {
+.header__list {
     display: flex;
     background: white;
     padding: 14px;

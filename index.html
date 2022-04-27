@@ -11,37 +11,43 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/tasks.css" rel=" stylesheet">
     <link href="css/conteiner.css" rel=" stylesheet">
-    <link href="css/buttons.css" rel=" stylesheet">
+    <link href="css/section.css" rel=" stylesheet">
     <link href="css/header.css" rel=" stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://thumbs.dreamstime.com/b/zadanie-listy-ikona-w-modnym-projekta-stylu-odizolowywaj%C4%85ca-na-bia%C5%82ym-tle-wektorowej-ikony-prosty-i-nowo%C5%BCytny-mieszkanie-135752964.jpg">
+    <link rel="icon"
+        href="https://thumbs.dreamstime.com/b/zadanie-listy-ikona-w-modnym-projekta-stylu-odizolowywaj%C4%85ca-na-bia%C5%82ym-tle-wektorowej-ikony-prosty-i-nowo%C5%BCytny-mieszkanie-135752964.jpg">
     <title>Lista zadań</title>
 
 </head>
 
 <body class="conteiner">
-    <header>
-        <Form class="js-form">
-
-            <legend class="form__taskList">
-                Lista zadań
-            </legend>
+    <main>
+        <header class="header">
+            <h1>Lista zadań</h1>
+        </header>
+        <section>
             <p>
-                <span class="form_addTask"> Dodaj nowe zadanie</span>
+            <h2><span class="section__header"> Dodaj nowe zadanie</span></h2>
             </p>
-            <section class="form__inputButton">
-                <input class="js-newTask form__input" placeholder="Co jest do zrobienia?">
-                <button class="form__button">Dodaj zadanie</button>
-            </section>
+            <form class="js-form">
 
+        </section>
+        <section class="section">
+            <input class="js-newTask section__input" autofocus placeholder="Co jest do zrobienia?">
+            <button class="section__button">Dodaj zadanie</button>
+            </form>
+        </section>
+        <section>
             <p>
-                <span class="form__list">Lista zadań</span>
+            <h3><span class="header__list">Lista zadań</span></h3>
             </p>
-    </header>
-    <div class="body__task">
-        <ul class="js-tasks form__task"></ul>
-    </div>
-    </Form>
+
+            <div class="task">
+                <ul class="js-tasks task__list"></ul>
+            </div>
+        </section>
+    </main>
 </body>
+
 
 </html>

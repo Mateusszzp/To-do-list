@@ -40,10 +40,10 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li class="displayTask">
-            <button class="js-done taskDone--button">${task.done ? "✔" : ""}</button>
+            <li class="task__display">
+            <button class="js-done task__done--button">${task.done ? "✔" : ""}</button>
             <span class="list__item ${task.done ? "list__item--done" : ""}">${task.content}</span>
-            <button class="js-remove taskRemove--button">🗑</button>
+            <button class="js-remove task__remove--button">🗑</button>
             </li>
             `;
         }

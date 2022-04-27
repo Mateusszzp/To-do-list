@@ -1,5 +1,5 @@
 
-.form__inputButton {
+.section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -8,14 +8,14 @@
     margin: -16px 0 0;
 }
 
-.form__input {
+.section__input {
     flex-basis: 100%;
     padding: 8px;
     border: 1px solid #e7e5e5;
     margin: 5px 0;
 }
 
-.form__button {
+.section__button {
     flex-wrap: wrap;
     flex-basis: 100%;
     background-color: teal;
@@ -23,14 +23,15 @@
     border: none;
     padding: 8px;
     margin: 5px 0;
+    cursor:pointer;
 }
 
 @media (min-width:768px) {
-    .form__input {
+    .section__input {
         flex-basis: 78%;
     }
 
-    .form__button {
+    .section__button {
         flex-basis: 20%;
         flex-wrap: unset;
     }
