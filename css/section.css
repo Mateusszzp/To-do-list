@@ -1,4 +1,3 @@
-
 .section {
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +22,12 @@
     border: none;
     padding: 8px;
     margin: 5px 0;
-    cursor:pointer;
+    cursor: pointer;
+    transition:1s;
+}
+
+.section__button:hover {
+    background-color: hsl(180, 100%, 30%)
 }
 
 @media (min-width:768px) {

@@ -1,11 +1,8 @@
 .task__display {
     display: grid;
-    grid-template-columns: 30px auto 30px;
-    grid-template-rows: auto;
-    grid-auto-rows: 60px;
+    grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     word-break: break-word;
-    list-style: none;
     border-bottom: 1px solid #e7e5e5;
     padding: 10px;
 }
@@ -27,8 +24,10 @@
     color: white;
     border: none;
     cursor: pointer;
+    transition:1s;
 }
-.task__remove--button:hover{
+
+.task__remove--button:hover {
     background-color: hsl(0, 87%, 65%);
 }
 
@@ -40,7 +39,8 @@
     background-color: hsl(120, 100%, 25%);
     color: white;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
+    transition:1s;
 
 }
 
