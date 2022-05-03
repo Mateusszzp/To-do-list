@@ -24,10 +24,12 @@
     margin: 5px 0;
     cursor: pointer;
     transition:1s;
+    transform:scale(1);
 }
 
 .section__button:hover {
     background-color: hsl(180, 100%, 30%);
+    transform:scale(1.1);
    
 }
 
