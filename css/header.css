@@ -6,12 +6,12 @@
     font-weight: 900;
 }
 
-.section_header {
+.section__header {
     display: flex;
     background-color: white;
-    padding: 17px;
+    padding: 14px;
     border-bottom: 2px solid #e7e5e5;
-    font-weight: 900;
+    
 }
 
 .header__list {
