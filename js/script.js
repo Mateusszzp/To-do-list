@@ -1,22 +1,31 @@
 {
 
-    const tasks = [];
+    let tasks = [];
+    console.log(tasks)
+
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            { content: newTaskContent, }
+        ]
         render();
 
     }
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        tasks = [
+            ...tasks.splice(0, taskIndex),
+            ...tasks.splice(taskIndex + 1),
+        ];
         render();
     }
     const toggleTaskDone = (taskIndex) => {
+        
         tasks[taskIndex].done = !tasks[taskIndex].done;
-        render()
+        render();
     }
+
+
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -34,16 +43,19 @@
                 toggleTaskDone(index);
             });
         });
-    }
+
+    };
     const render = () => {
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
             <li class="task__display">
+             
              <button class="js-done task__done--button">${task.done ? "✔" : ""}</button>
              <span class="list__item ${task.done ? "list__item--done" : ""}">${task.content}</span>
              <button class="js-remove task__remove--button">🗑</button>
+            
             </li>
             `;
         }
