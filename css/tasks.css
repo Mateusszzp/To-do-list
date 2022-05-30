@@ -1,4 +1,4 @@
-.task__display {
+.tasks__display {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
@@ -63,4 +63,8 @@
     padding: 20px;
     background: white;
     border-top: 1px solid #e7e5e5;
+}
+
+.tasks__display--hidden {
+    display: none;
 }
