@@ -7,6 +7,10 @@
     padding: 10px;
 }
 
+.tasks__display--hidden {
+    display: none;
+}
+
 .task__list {
     background: white;
     margin-top: -14px;
@@ -24,7 +28,7 @@
     color: white;
     border: none;
     cursor: pointer;
-    transition:1s;
+    transition: 1s;
 }
 
 .task__remove--button:hover {
@@ -40,7 +44,7 @@
     color: white;
     border: none;
     cursor: pointer;
-    transition:1s;
+    transition: 1s;
 
 }
 
@@ -60,11 +64,10 @@
 }
 
 .task {
-    padding: 20px;
+    padding: 14px;
     background: white;
     border-top: 1px solid #e7e5e5;
 }
 
-.tasks__display--hidden {
-    display: none;
-}
+
+
