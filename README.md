@@ -14,4 +14,4 @@ A simple application for listing tasks, marking their completion and modificatio
 #### Demo
 https://mateusszzp.github.io/To-do-list/
 
-![Site overview](gif/list.gif)
+![Site overview](gif/to do list2.gif)
