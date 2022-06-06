@@ -17,7 +17,7 @@
 .header__list {
     background: white;
     font-weight: 900;
-    margin: 0 0 0 10px
+    margin-left: 20px;
 }
 
 .section__header {
@@ -25,7 +25,7 @@
     align-items: baseline;
     justify-content: space-between;
     background: white;
-    
+
 }
 
 .buttons__button {
@@ -33,9 +33,23 @@
     color: hsl(180, 100%, 25%);
     border: none;
     transition: 0.6s;
-
+    cursor: pointer;
+    margin-right: 20px;
 }
-
 .buttons__button:hover {
     color: hsl(180, 100%, 35%);
 }
+
+
+@media (max-width:640px) {
+    .section__header {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .buttons__button {
+        margin: 0%;
+    }
+}
+
