@@ -3,16 +3,13 @@
     let tasks = [];
     let hideDoneTasks = false;
 
-
-
     const addNewTask = (newTaskContent) => {
         tasks = [
             ...tasks,
-            { content: newTaskContent},
+            { content: newTaskContent },
         ];
 
         render();
-
     };
 
     const removeTask = (taskIndex) => {
@@ -59,6 +56,7 @@
             });
         });
     };
+
     const bindToggelDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
@@ -69,15 +67,17 @@
         });
     };
 
-
-
     const renderTasks = () => {
         const taskToHTML = task => `
         <li 
-         class="tasks__display ${task.done && hideDoneTasks ? "tasks__display--hidden" : ""} js-tasks">
-         <button class="js-done task__done--button">${task.done ? "✔" : ""}</button>
-         <span class="list__item ${task.done ? "list__item--done" : ""}">${task.content}</span>
-         <button class="js-remove task__remove--button">🗑</button>
+         class="tasks__display ${task.done && hideDoneTasks ?
+                "tasks__display--hidden" : ""} js-tasks">
+         <button class="js-done task__done--
+    button">${task.done ? "✔" : ""}</button>
+         <span class="list__item ${task.done ?
+                "list__item--done" : ""}">${task.content}</span>
+         <button class="js-remove task__remove--button">🗑
+    </button>
         
         </li>
         `;
@@ -85,7 +85,6 @@
         const tasksElement = document.querySelector(".js-tasks");
         tasksElement.innerHTML = tasks.map(taskToHTML).join("");
     };
-
 
     const renderButtons = () => {
         const buttonsElement = document.querySelector(".js-buttons");
@@ -97,11 +96,13 @@
 
         buttonsElement.innerHTML = `
         
-        <button class="buttons__button js-toggleHideDoneTasks">
+        <button class="buttons__button 
+    js-toggleHideDoneTasks">
            ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
         </button>
         <button class="buttons__button js-markAllDone"
-          ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+          ${tasks.every(({ done }) => done) ? "disabled" :
+    ""}>
         Ukończ Wszystkie
         </button>
         `;
@@ -150,7 +151,7 @@
         form.addEventListener("submit", onFormSubmit);
 
     };
-    
+
     init();
 
 }
