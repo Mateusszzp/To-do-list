@@ -72,12 +72,14 @@
         <li 
          class="tasks__display ${task.done && hideDoneTasks ?
                 "tasks__display--hidden" : ""} js-tasks">
-         <button class="js-done task__done--
-    button">${task.done ? "✔" : ""}</button>
+         <button class="js-done task__done--button">${task.done ? "✔" : ""}
+         </button>
          <span class="list__item ${task.done ?
-                "list__item--done" : ""}">${task.content}</span>
-         <button class="js-remove task__remove--button">🗑
-    </button>
+                "list__item--done" : ""}">${task.content}
+        </span>
+         <button class="js-remove task__remove--button">
+         🗑
+         </button>
         
         </li>
         `;
@@ -102,7 +104,7 @@
         </button>
         <button class="buttons__button js-markAllDone"
           ${tasks.every(({ done }) => done) ? "disabled" :
-    ""}>
+                ""}>
         Ukończ Wszystkie
         </button>
         `;
