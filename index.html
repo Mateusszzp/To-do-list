@@ -10,9 +10,10 @@
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/tasks.css" rel=" stylesheet">
-    <link href="css/conteiner.css" rel=" stylesheet">
+    <link href="css/container.css" rel=" stylesheet">
     <link href="css/form.css" rel=" stylesheet">
     <link href="css/section.css" rel=" stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/buttons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="icon"
@@ -22,34 +23,36 @@
 </head>
 
 <body>
-    <main>
-        <header class="header">
-            <h1>Lista zadań</h1>
-        </header>
-        <section>
-            
-            <h2> <span class="section">Dodaj nowe zadanie</span></h2>
-            
-        </section>
-        <form class="js-form">
-
-
-            <section class="form">
-                <input class="js-newTask section__input"placeholder="Co jest do zrobienia?">
-                <button class="section__button">Dodaj zadanie</button>
-            </section>
-        </form>
-
-        <section>
-            <header class="section__header">
-                <h3><span class="header__list">Lista zadań</span></h3>
-                <div class="js-buttons"></div>
+    <div class="container">
+        <main>
+            <header class="header">
+                <h1>Lista zadań</h1>
             </header>
-            <div class="task">
-                <ul class="js-tasks task__list"></ul>
-            </div>
-        </section>
-    </main>
+            <section>
+
+                <h2> <span class="section">Dodaj nowe zadanie</span></h2>
+
+            </section>
+            <form class="js-form">
+
+
+                <section class="form">
+                    <input class="js-newTask section__input" placeholder="Co jest do zrobienia?">
+                    <button class="section__button">Dodaj zadanie</button>
+                </section>
+            </form>
+
+            <section>
+                <header class="section__header">
+                    <h2><span class="header__list">Lista zadań</span></h2>
+                    <div class="js-buttons"></div>
+                </header>
+                <div class="task">
+                    <ul class="js-tasks task__list"></ul>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 
