@@ -1,5 +1,4 @@
 {
-
     let tasks = [];
     let hideDoneTasks = false;
 

@@ -1,6 +1,6 @@
-# To do list
+# ***To do list*** JavaScript vanilla 📂
 
-## Technologies used
+## ***Technologies used***⚒
 - BEM 
 - Flex Box
 - Grid
@@ -8,10 +8,11 @@
 - Java Script function
 - Media query
 
-### Description
+### **Description**🛠
 A simple application for listing tasks, marking their completion and modification.
 
-#### Demo
+### **Demo**⚙
 https://mateusszzp.github.io/To-do-list/
 
+##  **How to use**
 ![Site overview](gif/to_do_list.gif)
